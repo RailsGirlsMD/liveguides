@@ -14,6 +14,19 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# we use Bootstrap 4 alpha to make it look good
+# More info on http://v4-alpha.getbootstrap.com/
+gem 'bootstrap', '~> 4.0.0.alpha3'
+
+# some of the gems are not available
+# on rubygems.org, so we use rails-assets instead
+# More info on https://rails-assets.org
+source 'https://rails-assets.org' do
+  # tether is a library required by some
+  # of the Bootsrap components
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
