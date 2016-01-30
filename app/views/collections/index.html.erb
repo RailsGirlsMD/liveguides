@@ -5,46 +5,5 @@
 </div>
 
 <section class="row">
-  <div class="third-width">
-    <div class="collection-item">
-      <div class="card-block">
-        <h2 class="collection-title">
-          <a href="#">
-            Introduction
-          </a>
-        </h2>
-        <p class="card-text">What will you do during the whole course. Some details about the setup.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a href="#" class="btn btn-sm btn-primary-outline">View 3 documents</a>
-      </div>
-    </div>
-  </div>
-  <div class="third-width">
-    <div class="collection-item">
-      <div class="card-block">
-        <h2 class="collection-title">
-          <a href="#">
-            1. Ruby and a bit of Rails
-          </a>
-        </h2>
-        <p class="card-text">Ruby on Rails is a set of functions and variables that help us make web apps. It has been created in 2005 and has been maintained by volunteers all over the world.</p>
-        <p class="card-text"><small class="text-muted">Last updated 10 days ago</small></p>
-        <a href="#" class="btn btn-sm btn-primary-outline">View 4 documents</a>
-      </div>
-    </div>
-  </div>
-  <div class="third-width">
-    <div class="collection-item">
-      <div class="card-block">
-        <h2 class="collection-title">
-          <a href="#">
-            2. Adding authentication with the Devise gem
-          </a>
-        </h2>
-        <p class="card-text">What are Gems? It’s pretty simple, really. You can think of a Ruby Gem as a library or plug-in.</p>
-        <p class="card-text"><small class="text-muted">Last updated 10 days ago</small></p>
-        <a href="#" class="btn btn-sm btn-primary-outline">View 1 document</a>
-      </div>
-    </div>
-  </div>
+  <%= render @collections %>
 </section>

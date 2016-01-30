@@ -16,3 +16,12 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+  $('.js-clamp-3').each(function(index, item) {
+    $clamp(item, { clamp: 5 })
+  })
+  $('.js-clamp-1').each(function(index, item) {
+    $clamp(item, { clamp: 1 })
+  })
+})
