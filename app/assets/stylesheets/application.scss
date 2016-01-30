@@ -1,1 +1,31 @@
 @import "bootstrap";
+
+$grid-pace: 36px;
+$collection-title-color: $gray-dark;
+
+main {
+  padding-top: $grid-pace;
+}
+
+section {
+  padding-top: $grid-pace;
+}
+
+.third-width {
+  @extend .col-lg-4;
+}
+.collection-item {
+  @extend .card;
+
+  .collection-title {
+    @extend .card-title;
+    font-size: 1.5rem;
+    a {
+      color: $collection-title-color;
+      &:hover, &:focus {
+        color: $collection-title-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
